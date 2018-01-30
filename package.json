@@ -5,7 +5,10 @@
     "main": "server.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "echo \"start\" && exit 1"
+        "build": "SET NODE_ENV=production & webpack-dev-server --hot --inline",
+        "build2": "SET NODE_ENV=production & webpack",
+        "build3": "SET NODE_ENV=development & webpack",
+        "start": "node index.js"
     },
     "author": "",
     "license": "ISC",
